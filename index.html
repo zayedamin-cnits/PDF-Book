@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SIMPLE MEGAMENU</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <nav class="navbar">
+            <div class="brand-and-icon">
+                <a href="index.html" class="navbar-brand"></a>
+                <button type="button" class="navbar-toggler">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+
+                    <li>
+                        <a onclick="openNav()" href="#">Contents</a>
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Download as PDF</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Print</a>
+                    </li>
+                    <li>
+                        <a href="#">Share </a>
+                    </li>
+                    <li>
+                        <a href="#">Accessibility </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <section id="book-section">
+        <!-- Previous Button -->
+        <button id="prev-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+
+
+        <!-- Book -->
+        <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+
+                        <img src="./image/01.pdf" alt="">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+
+                        <img src="./image/jon-tyson-H1flXzFuXgo-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <!-- <h1>Front 2</h1> -->
+                        <img src="./image/logan-weaver-lgnwvr-8BNT5G4V5fI-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <!-- <h1>Back 2</h1> -->
+                        <img src="./image/ludovica-dri-Bc_y35IwUHw-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <!-- <h1>Front 3</h1> -->
+                        <img src="./image/mattias-diesel-3M2cqBRQmjA-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <!-- <h1>Back 3</h1> -->
+                        <img src="./image/logan-weaver-lgnwvr-8BNT5G4V5fI-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/script.js"></script>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
