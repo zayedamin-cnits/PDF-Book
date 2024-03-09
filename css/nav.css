@@ -7,10 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* .main-wrapper img{
-    width: 100%;
-    display: block;
-} */
+
 .main-wrapper a{
     color: #000;
     text-decoration: none;
@@ -18,6 +15,12 @@
 
 .main-wrapper ul li{
     list-style-type: none;
+    display: flex;
+    margin: 0px 5px;
+}
+.main-wrapper ul li i{
+    font-size: 12px;
+    padding: 12px 0px 0px 0px;
 }
 .navbar{
     background: #fff;
@@ -26,7 +29,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* max-height: 100vh; */
+ 
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -34,7 +37,7 @@
 .brand-and-icon{
     display: flex;
     justify-content: space-between;
-    /* padding: 1rem 0; */
+    
     border-bottom: 1px solid #ddd;
 }
 
@@ -121,36 +124,34 @@
     .navbar-nav > li:hover{
         border-bottom-color: #000;
     }
- 
 
- 
 }
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 400px;
     position: fixed;
     z-index: 20;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #474747;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    margin-top: 38px;
+    /* margin-top: 38px; */
   }
   
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 15px;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #9b9a9a;
   }
   
   .sidenav .closebtn {

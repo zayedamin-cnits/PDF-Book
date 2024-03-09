@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/3b62fe7d6c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,35 +32,56 @@
                 <ul class="navbar-nav">
 
                     <li>
+                        <i class="fa-solid fa-list"></i>
+
                         <a onclick="openNav()" href="#">Contents</a>
 
                         <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-                            <a href="#">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Clients</a>
-                            <a href="#">Contact</a>
+                            <a href="#">HISTORY
+                                ..................................................................6</a>
+                            <a href="#">SEASIDE STORIES...................................................13</a>
+                            <a href="#">FASHION ROMANCE...............................................20</a>
+                            <a href="#">INTO THE WORLD....................................................30</a>
+                            <a href="#">CULINARY ART........................................................36</a>
+                            <a href="#">THE AUTHENTIC SOUTH........................................44</a>
+                            <a
+                                href="#">GOLf.........................................................................52</a>
+                            <a
+                                href="#">FUN..........................................................................58</a>
+                            <a href="#">WELLNESS..............................................................64</a>
+                            <a href="#">DISCOVER...............................................................70</a>
+
+
+
+
                         </div>
                     </li>
 
                     <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                         <a href="#">Search</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-table-cells"></i>
                         <a href="#">Overview</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-download"></i>
                         <a href="#">Download as PDF</a>
                     </li>
 
                     <li>
+                        <i class="fa-solid fa-print"></i>
                         <a href="#">Print</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-share-nodes"></i>
                         <a href="#">Share </a>
                     </li>
                     <li>
+                        <i class="fa-brands fa-accessible-icon"></i>
                         <a href="#">Accessibility </a>
                     </li>
 
@@ -76,20 +98,17 @@
             <i class="fas fa-arrow-circle-left"></i>
         </button>
 
-
         <!-- Book -->
         <div id="book" class="book">
             <!-- Paper 1 -->
             <div id="p1" class="paper">
                 <div class="front">
                     <div id="f1" class="front-content">
-
                         <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
                     </div>
                 </div>
                 <div class="back">
                     <div id="b1" class="back-content">
-
                         <img src="./image/jon-tyson-H1flXzFuXgo-unsplash.jpg" alt="">
                     </div>
                 </div>
@@ -98,13 +117,11 @@
             <div id="p2" class="paper">
                 <div class="front">
                     <div id="f2" class="front-content">
-                        <!-- <h1>Front 2</h1> -->
                         <img src="./image/logan-weaver-lgnwvr-8BNT5G4V5fI-unsplash.jpeg" alt="">
                     </div>
                 </div>
                 <div class="back">
                     <div id="b2" class="back-content">
-                        <!-- <h1>Back 2</h1> -->
                         <img src="./image/ludovica-dri-Bc_y35IwUHw-unsplash.jpeg" alt="">
                     </div>
                 </div>
@@ -113,13 +130,11 @@
             <div id="p3" class="paper">
                 <div class="front">
                     <div id="f3" class="front-content">
-                        <!-- <h1>Front 3</h1> -->
                         <img src="./image/mattias-diesel-3M2cqBRQmjA-unsplash.jpg" alt="">
                     </div>
                 </div>
                 <div class="back">
                     <div id="b3" class="back-content">
-                        <!-- <h1>Back 3</h1> -->
                         <img src="./image/mattias-diesel-3M2cqBRQmjA-unsplash.jpg" alt="">
                     </div>
                 </div>
@@ -132,6 +147,15 @@
         </button>
 
     </section>
+
+    <script>
+        // Trigger click event on the next button to show page 2 by default
+        document.addEventListener("DOMContentLoaded", function () {
+            var nextBtn = document.getElementById("next-btn");
+            nextBtn.click();
+        });
+    </script>
+
 
 
 
@@ -150,7 +174,7 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("mySidenav").style.width = "450px";
         }
 
         function closeNav() {
