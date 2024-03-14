@@ -8,7 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
+    background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
     font-family: sans-serif;
 
     
@@ -114,4 +115,8 @@ i {
 
 #p3 {
     z-index: 1;
+}
+.prev-btn i{
+    background: #636363 !important;
+    padding: 10px !important;
 }

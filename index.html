@@ -63,11 +63,12 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"><i
+                                    class="fa-solid fa-magnifying-glass"></i>Search</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"> <i
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropover" href="#"> <i
                                     class="fa-solid fa-table-cells"></i>Overview</a>
                         </li>
                         <li class="nav-item">
@@ -81,7 +82,8 @@
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropshare" href="#"><i
+                                    class="fa-solid fa-share-nodes"></i>Share</a>
 
 
                         </li>
@@ -102,7 +104,8 @@
     <section id="book-section">
         <!-- Previous Button -->
         <button id="prev-btn">
-            <i class="fas fa-arrow-circle-left"></i>
+            <!-- <i class="fas fa-arrow-circle-left"></i> -->
+            <i class="fa-solid fa-chevron-left fa-beat"></i>
         </button>
 
         <!-- Book -->
@@ -150,7 +153,8 @@
 
         <!-- Next Button -->
         <button id="next-btn">
-            <i class="fas fa-arrow-circle-right"></i>
+            <!-- <i class="fas fa-arrow-circle-right"></i> -->
+            <i class="fa-solid fa-chevron-right fa-beat"></i>
         </button>
 
     </section>
@@ -159,85 +163,150 @@
 
 
 
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Overview</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="overview-main">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-
-                            </a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#">
-                                <div class="card">
-                                    <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
-                                    <span>1</span>
-                                </div>
-                            </a>
-                        </div>
+    <div class="search">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Search</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
+                    <div class="overview-main-search">
+                        <form action="#">
+                            <input type="text" placeholder="Search....."><span><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </form>
+                        <p>To search for words in the flipbook, type the keywords in the field (minimum of 3
+                            characters). </p>
+                        <p>The results will display all existing matches to any of the keywards.</p>
+
+                        <p>If you only wish to see results which include a specific phrase or combination of keywords,
+                            place quotations around the phrase or word combination.</p>
+
+                        <p> For example: "Instruction manual" "API documentation Summer shoe styles</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="overview">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdropover" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Overview</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="overview-main">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./image/ashni-Wh9ZC4727e4-unsplash.jpeg" alt="">
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdropshare" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Share</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="share-social">
+                        <a href="#"> <img src="./image/download.png" alt=""></a>
+                        <a href="#"><img src="./image/twitter-logo-twitter-icon-transparent-free-free-png.webp"
+                                alt=""></a>
+
+                        <a href="#"><img src="./image/Popular_Social_Media-22-512.webp" alt=""> </a>
+                        <a href="#"><img src="./image/pinterest-logo-pinterest-transparent-free-png.webp" alt=""> </a>
+
+                        <a href="#"><img src="./image/download (1).png" alt=""> </a>
+
+                        <a href="#"><img src="./image/skype-logo-skype-icon-transparent-free-png.webp" alt=""> </a>
+
+
+                        <a href="#"><img src="./image/download.jpg" alt=""> </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
 
 
 
